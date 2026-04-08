@@ -1,13 +1,25 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import javax.swing.text.StyledEditorKit;
 
 public class Clase2 {
 
     public static void main(String[] args) {
 
-        PuedeVotar();
+        while (true) {
+            String nombre = solicitarNombre();
+            int edad = SolicitarEdad();
+            PuedeVotar(nombre, edad);
+        }
+    }
 
+    public static void PuedeVotar(String nombre, int edad) {
+        if (edad >= 18) {
+            System.out.println(nombre + " puedes votar");
+        } else {
+            System.out.println(nombre + " no puedes votar");
+        }
     }
 
     public static void PuedeVotar() {
@@ -46,4 +58,5 @@ public class Clase2 {
         }
         return 0;
     }
+
 }
