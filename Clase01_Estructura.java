@@ -5,6 +5,6 @@ public class Clase01_Estructura {
     public static void main(String[] args) {
         // System.out.print imprime en consola
         // 'println' hace lo mismo pero agrega un salto de línea al final
-        System.out.println("¡Bienvenidos al tercer semestre de programación!");
+        System.out.println("¡Bienvenidos al programacion orientada objetos2 semestre de programación!");
     }
 }
